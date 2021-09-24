@@ -4,7 +4,7 @@ in
 {
   imports = [ ../cachix ];
 
-#  nix.systemFeatures = [ "nixos-test" "benchmark" "big-parallel" "kvm" ];
+  nix.systemFeatures = [ "nixos-test" "benchmark" "big-parallel" "kvm" ];
 
   environment = {
 
