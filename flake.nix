@@ -40,6 +40,29 @@
 
       nixos-hardware.url = "github:nixos/nixos-hardware";
 
+      nur.url = "github:nix-community/NUR";
+      # emacs.url = "github:cmacrae/emacs";
+
+      firefox-addons = {
+        url = "gitlab:montchr/nur-expressions/develop?dir=pkgs/firefox-addons";
+        inputs.nixpkgs.follows = "latest";
+      };
+
+      firefox-lepton = {
+        url = "github:black7375/Firefox-UI-Fix";
+        flake = false;
+      };
+
+      base16-kitty = {
+        url = "github:kdrag0n/base16-kitty";
+        flake = false;
+      };
+
+      rnix-lsp = {
+        url = "github:nix-community/rnix-lsp";
+        inputs.nixpkgs.follows = "nixos";
+      };
+
       # start ANTI CORRUPTION LAYER
       # remove after https://github.com/NixOS/nix/pull/4641
       nixpkgs.follows = "nixos";
@@ -52,15 +75,16 @@
 
   outputs =
     { self
-    , digga
+    , agenix
     , bud
-    , nixos
+    , deploy
+    , digga
+      # , emacs
     , home
+    , nixos
     , nixos-hardware
     , nur
-    , agenix
     , nvfetcher
-    , deploy
     , ...
     } @ inputs:
     digga.lib.mkFlake

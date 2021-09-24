@@ -20,6 +20,22 @@
         "type": "github"
       }
     },
+    "base16-kitty": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1589263869,
+        "narHash": "sha256-+pdXnjuYl7E++QvKOrdSokBc32mkYf3e4Gmnn0xS2iQ=",
+        "owner": "kdrag0n",
+        "repo": "base16-kitty",
+        "rev": "fe5862cec41bfd0b46a1ac3d7565a50680051226",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kdrag0n",
+        "repo": "base16-kitty",
+        "type": "github"
+      }
+    },
     "beautysh": {
       "inputs": {
         "flake-utils": "flake-utils",
@@ -177,6 +193,46 @@
         "type": "github"
       }
     },
+    "firefox-addons": {
+      "inputs": {
+        "flake-utils": "flake-utils_3",
+        "nixpkgs": [
+          "latest"
+        ]
+      },
+      "locked": {
+        "dir": "pkgs/firefox-addons",
+        "lastModified": 1630291947,
+        "narHash": "sha256-S7xUi/LXXNXX8mIhXKoXrQKGKr9e9x/efPy2qRGHGFs=",
+        "owner": "montchr",
+        "repo": "nur-expressions",
+        "rev": "94c9984e0843e813824c368b007453b8a693bce7",
+        "type": "gitlab"
+      },
+      "original": {
+        "dir": "pkgs/firefox-addons",
+        "owner": "montchr",
+        "ref": "develop",
+        "repo": "nur-expressions",
+        "type": "gitlab"
+      }
+    },
+    "firefox-lepton": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1632079808,
+        "narHash": "sha256-cKq7b45VrOO+ntnsZ/eseWZ2IV9hKpqXJN7cjDbgnos=",
+        "owner": "black7375",
+        "repo": "Firefox-UI-Fix",
+        "rev": "f2977bd3040f0246674a9cec6c44651a524b76e7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "black7375",
+        "repo": "Firefox-UI-Fix",
+        "type": "github"
+      }
+    },
     "flake-compat": {
       "flake": false,
       "locked": {
@@ -237,6 +293,21 @@
         "owner": "numtide",
         "repo": "flake-utils",
         "rev": "f7e004a55b120c02ecb6219596820fcd32ca8772",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "flake-utils_3": {
+      "locked": {
+        "lastModified": 1629284811,
+        "narHash": "sha256-JHgasjPR0/J1J3DRm4KxM4zTyAj4IOJY8vIl75v/kPI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "c5d161cc0af116a2e17f54316f0bf43f0819785c",
         "type": "github"
       },
       "original": {
@@ -325,6 +396,27 @@
         "type": "github"
       }
     },
+    "naersk_3": {
+      "inputs": {
+        "nixpkgs": [
+          "rnix-lsp",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1629707199,
+        "narHash": "sha256-sGxlmfp5eXL5sAMNqHSb04Zq6gPl+JeltIZ226OYN0w=",
+        "owner": "nmattia",
+        "repo": "naersk",
+        "rev": "df71f5e4babda41cd919a8684b72218e2e809fa9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nmattia",
+        "repo": "naersk",
+        "type": "github"
+      }
+    },
     "nixos": {
       "locked": {
         "lastModified": 1628203131,
@@ -383,16 +475,17 @@
     },
     "nur": {
       "locked": {
-        "lastModified": 1626378135,
-        "narHash": "sha256-koC6DBYmLCrgXA+AMHVaODf1uHYPmvcFygHfy3eg6vI=",
+        "lastModified": 1632493269,
+        "narHash": "sha256-I5iqmmrqoSRJPL5f2sWwbF7Bvzda8WkbwBraS0FDOsc=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "00c2ec8f0bbdf0cfb2135bde55fbae5d6b64aa6d",
+        "rev": "dae15adbabe8c2eeb0c77433b2056a5f692065e2",
         "type": "github"
       },
       "original": {
-        "id": "nur",
-        "type": "indirect"
+        "owner": "nix-community",
+        "repo": "NUR",
+        "type": "github"
       }
     },
     "nvfetcher": {
@@ -452,9 +545,32 @@
         "type": "github"
       }
     },
+    "rnix-lsp": {
+      "inputs": {
+        "naersk": "naersk_3",
+        "nixpkgs": [
+          "nixos"
+        ],
+        "utils": "utils"
+      },
+      "locked": {
+        "lastModified": 1632399591,
+        "narHash": "sha256-54dtLkGAbQ4Sln/bs/sI0GaCbXyK8+vDD8QBgxaiCXg=",
+        "owner": "nix-community",
+        "repo": "rnix-lsp",
+        "rev": "b3f2a6dbcd1115bd449b8cf1299d828c9ebeb485",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "rnix-lsp",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "agenix": "agenix",
+        "base16-kitty": "base16-kitty",
         "blank": [
           "digga",
           "blank"
@@ -466,6 +582,8 @@
           "deploy"
         ],
         "digga": "digga",
+        "firefox-addons": "firefox-addons",
+        "firefox-lepton": "firefox-lepton",
         "flake-utils": [
           "digga",
           "flake-utils"
@@ -487,7 +605,23 @@
           "nixos"
         ],
         "nur": "nur",
-        "nvfetcher": "nvfetcher"
+        "nvfetcher": "nvfetcher",
+        "rnix-lsp": "rnix-lsp"
+      }
+    },
+    "utils": {
+      "locked": {
+        "lastModified": 1629481132,
+        "narHash": "sha256-JHgasjPR0/J1J3DRm4KxM4zTyAj4IOJY8vIl75v/kPI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "997f7efcb746a9c140ce1f13c72263189225f482",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
       }
     }
   },
