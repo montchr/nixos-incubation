@@ -9,6 +9,7 @@ in
   environment = {
 
     systemPackages = with pkgs; [
+      bat
       binutils
       coreutils
       curl
@@ -111,6 +112,8 @@ in
 
     };
   };
+
+  i18n.defaultLocale = "en_US.UTF-8";
 
   nix = {
 

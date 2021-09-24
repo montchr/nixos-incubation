@@ -12,15 +12,6 @@
     terminal_output serial
   '';
 
-  fileSystems."/" = {
-    device = "/dev/sda";
-    fsType = "ext4";
-  };
-
-  swapDevices = [
-    { device = "/dev/sdb"; }
-  ];
-
   networking.usePredictableInterfaceNames = false;
   networking.useDHCP = false;
   networking.interfaces.eth0.useDHCP = true;
