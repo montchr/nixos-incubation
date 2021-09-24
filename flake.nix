@@ -112,8 +112,8 @@
 
           imports = [ (digga.lib.importHosts ./hosts) ];
           hosts = {
-            /* set host specific properties here */
             NixOS = { };
+            seadoom = { };
           };
           importables = rec {
             profiles = digga.lib.rakeLeaves ./profiles // {
