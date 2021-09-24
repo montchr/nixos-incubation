@@ -1,14 +1,29 @@
-{ profiles, suites, ... }:
+{ profiles, suites, modulesPath, ... }:
 {
   imports = [
-    ./hardware-configuration.nix
+    (modulesPath + "/profiles/qemu-guest.nix")
     profiles.linode
   ] ++ suites.base;
 
-  networking.hostName = "seadoom";
-
   bud.enable = true;
   bud.localFlakeClone = "/etc/nixos";
+
+  boot.loader.grub.enable = true;
+  boot.loader.grub.version = 2;
+
+  boot.initrd.availableKernelModules = [ "virtio_pci" "virtio_scsi" "ahci" "sd_mod" ];
+  boot.initrd.kernelModules = [ ];
+  boot.kernelModules = [ ];
+  boot.extraModulePackages = [ ];
+
+  fileSystems."/" = {
+    device = "/dev/sda";
+    fsType = "ext4";
+  };
+
+  swapDevices = [
+    { device = "/dev/sdb"; }
+  ];
 
   time.timeZone = "America/New_York";
 

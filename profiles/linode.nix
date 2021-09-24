@@ -1,5 +1,4 @@
-{ config, lib, pkgs, modulesPath, ... }:
-
+{ config, lib, pkgs, ... }:
 {
   # LISH compatibility
   boot.kernelParams = [ "console=ttyS0,19200n8" ];
