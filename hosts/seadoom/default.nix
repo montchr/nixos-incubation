@@ -9,5 +9,5 @@
   ] ++ suites.base;
 
   bud.enable = true;
-  bud.localFlakeClone = "/home/cdom/devos";
+  bud.localFlakeClone = "/etc/nixos";
 }
