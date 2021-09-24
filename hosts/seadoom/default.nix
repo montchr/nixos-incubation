@@ -1,9 +1,9 @@
 { profiles, suites, ... }:
 {
   imports = [
-    ./configuration.nix
+    # ./configuration.nix
     #./hardware-configuration.nix
-    #./orig/configuration.nix
+    ./orig/configuration.nix
     ./orig/hardware-configuration.nix
     #profiles.linode
   ] ++ suites.base;
