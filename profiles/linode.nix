@@ -28,7 +28,7 @@
   # Diagnostic tools used by Linode support.
   environment.systemPackages = with pkgs; [
     inetutils
-    metr
+    mtr
     sysstat
   ];
 }
