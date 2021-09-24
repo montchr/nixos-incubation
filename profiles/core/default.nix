@@ -147,8 +147,7 @@ in
   # For rage encryption, all hosts need a ssh key pair
   services.openssh = {
     enable = true;
-    openFirewall = true;
-    # openFirewall = lib.mkDefault false;
+    openFirewall = lib.mkDefault false;
   };
 
   # services.earlyoom.enable = true;

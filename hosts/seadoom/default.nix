@@ -10,4 +10,6 @@
 
   bud.enable = true;
   bud.localFlakeClone = "/etc/nixos";
+
+  services.openssh.openFirewall = true;
 }
