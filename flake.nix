@@ -159,7 +159,7 @@
             };
           };
           users = {
-            # nixos = { suites, ... }: { imports = suites.base; };
+            nixos = { suites, ... }: { imports = suites.base; };
             cdom = { suites, ... }: { imports = suites.base; };
           }; # digga.lib.importers.rakeLeaves ./users/hm;
         };
