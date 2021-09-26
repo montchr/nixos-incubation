@@ -41,7 +41,10 @@
       nixos-hardware.url = "github:nixos/nixos-hardware";
 
       nur.url = "github:nix-community/NUR";
-      # emacs.url = "github:cmacrae/emacs";
+      emacs.url = "github:cmacrae/emacs";
+
+      emacs-overlay.url = "github:nix-community/emacs-overlay";
+      emacs-overlay.inputs.nixpkgs.follows = "latest";
 
       firefox-addons = {
         url = "gitlab:montchr/nur-expressions/develop?dir=pkgs/firefox-addons";
@@ -79,7 +82,6 @@
     , bud
     , deploy
     , digga
-      # , emacs
     , home
     , nixos
     , nixos-hardware

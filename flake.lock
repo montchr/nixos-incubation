@@ -193,6 +193,73 @@
         "type": "github"
       }
     },
+    "emacs": {
+      "inputs": {
+        "emacs-src": "emacs-src",
+        "emacs-vterm-src": "emacs-vterm-src",
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1632448385,
+        "narHash": "sha256-qMrFQ42hCfhdYmWgr19J0IWaCfgYLaeLfumEt8g46wM=",
+        "owner": "cmacrae",
+        "repo": "emacs",
+        "rev": "f4f308eff50a988fca7dc65e7460608f59a4d583",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cmacrae",
+        "repo": "emacs",
+        "type": "github"
+      }
+    },
+    "emacs-overlay": {
+      "locked": {
+        "lastModified": 1632620532,
+        "narHash": "sha256-z1l20ec5IAzDQYNr6yiNy13mXkxKkqeQkETR37qijOA=",
+        "owner": "nix-community",
+        "repo": "emacs-overlay",
+        "rev": "30d84ab85192f19beaa7a9af4640d8f4a2e74da5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "emacs-overlay",
+        "type": "github"
+      }
+    },
+    "emacs-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1632439806,
+        "narHash": "sha256-3SJ05R6LH+nreJc6mbF1gPMnAjzpOp0Y9wyJ0/HdmtE=",
+        "ref": "master",
+        "rev": "4c891b2a05748c7a16ac6ac94f01e017187c4949",
+        "revCount": 150297,
+        "type": "git",
+        "url": "git://git.sv.gnu.org/emacs.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "git://git.sv.gnu.org/emacs.git"
+      }
+    },
+    "emacs-vterm-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1631083259,
+        "narHash": "sha256-+fl1GUCpAZBOvgMd3akF9EMirp1/K+JyRq0TWKSDeJw=",
+        "owner": "akermu",
+        "repo": "emacs-libvterm",
+        "rev": "2681120b770573044832ba8c22ccbac192e1a294",
+        "type": "github"
+      },
+      "original": {
+        "owner": "akermu",
+        "repo": "emacs-libvterm",
+        "type": "github"
+      }
+    },
     "firefox-addons": {
       "inputs": {
         "flake-utils": "flake-utils_3",
@@ -473,6 +540,22 @@
         "type": "github"
       }
     },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1632146492,
+        "narHash": "sha256-+5LSb1alIWujWwFUZ2Juv1U9owBidLDONsz/T7ydDIY=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "1a56d76d718afb6c47dd96602c915b6d23f7c45d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nur": {
       "locked": {
         "lastModified": 1632493269,
@@ -582,6 +665,8 @@
           "deploy"
         ],
         "digga": "digga",
+        "emacs": "emacs",
+        "emacs-overlay": "emacs-overlay",
         "firefox-addons": "firefox-addons",
         "firefox-lepton": "firefox-lepton",
         "flake-utils": [
