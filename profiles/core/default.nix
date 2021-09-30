@@ -153,6 +153,8 @@ in
     openFirewall = lib.mkDefault false;
   };
 
-  # services.earlyoom.enable = true;
+  # Automatically kill processes when running low on available memory.
+  # https://github.com/rfjakob/earlyoom
+  services.earlyoom.enable = true;
 
 }
