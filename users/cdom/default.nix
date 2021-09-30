@@ -34,6 +34,44 @@ in
     hashedPassword = "$6$cmmnia0KcFp9EW2$86jtbUy9LUPXBrbZj2B7Vbzmm9qrYFaCp8U8DV55SbA1sibHzKneKNY597EkgXSYY7yXXlYf1Yxaw/hmKwRGU.";
     extraGroups = [ "wheel" "networkmanager" ];
     openssh.authorizedKeys.keys = sshKeys;
+    packages = with pkgs; [
+      asciinema
+      # bandwhich # display current network utilization by process
+      bottom # fancy version of `top` with ASCII graphs
+      cacert
+      cachix
+      circleci-cli
+      du-dust
+      exa
+      fd
+      findutils
+      gawk
+      getopt
+      gnupg
+      gnused
+      gnutar
+      grex # Generate regexps from user-provided test cases
+      hyperfine
+      lua
+      jq
+      less
+      lnav # System Log file navigator
+      pandoc
+      pass
+      ripgrep
+      rsync
+      shellcheck
+      shfmt
+      tmux
+      universal-ctags
+      vim
+      vim-vint
+      wget
+      yamllint
+      yq
+      zoxide
+      zsh
+    ];
   };
 
   environment = {
